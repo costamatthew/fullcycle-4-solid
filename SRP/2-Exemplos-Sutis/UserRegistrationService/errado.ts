@@ -9,7 +9,7 @@ interface UserDTO {
 // Serviço de cadastro de usuário
 class UserRegistrationService1 {
   registerUser(user: UserDTO) {
-    if (!user.password) {
+    if (!user.password) {7
       throw new Error("Senha é obrigatória");
     }
     console.log("Usuário registrado:", user);
